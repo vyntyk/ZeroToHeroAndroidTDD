@@ -33,7 +33,6 @@ class MainActivity : AppCompatActivity() {
         super.onSaveInstanceState(outState)
         outState.putString("key", titleTextView.text.toString())
     }
-
     override fun onRestoreInstanceState(savedInstanceState: Bundle) {
         super.onRestoreInstanceState(savedInstanceState)
         titleTextView.text = savedInstanceState.getString("key")
