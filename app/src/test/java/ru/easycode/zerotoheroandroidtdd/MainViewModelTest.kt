@@ -66,13 +66,9 @@ private interface FakeLiveDataWrapper : LiveDataWrapper {
 }
 
 private interface FakeRepository : Repository {
-
     fun checkLoadCalledTimes(times: Int)
-
     class Base : FakeRepository {
-
         private var actualCalledTimes: Int = 0
-
         override fun checkLoadCalledTimes(times: Int) {
             assertEquals(times, actualCalledTimes)
         }
