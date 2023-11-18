@@ -51,12 +51,11 @@ task/020-input soluton on YouTube https://youtu.be/7rRF6WB6Q5w
 
 task/021-watch-input soluton on YouTube https://youtu.be/nCjJ-oUWFj8
 
-task/022   https://www.youtube.com/watch?v=IY4_LycCNvY&list=PLQRyeBV1rkk19C0IydNk-OMTRQi18katz&index=22&ab_channel=easyCodeRu
+task/022-list soluton on YouTube https://youtu.be/IY4_LycCNvY
 
-task/023 https://www.youtube.com/watch?v=0QOackU05SQ&list=PLQRyeBV1rkk19C0IydNk-OMTRQi18katz&index=23&ab_channel=easyCodeRu
+task/023-recycler soluton on YouTube https://youtu.be/0QOackU05SQ
 
-task/024 https://www.youtube.com/watch?v=rva0YlnzsK4&list=PLQRyeBV1rkk19C0IydNk-OMTRQi18katz&index=24&ab_channel=easyCodeRu
+task/024-mvvm-recycler soluton on YouTube https://youtu.be/rva0YlnzsK4
 
-task/025 https://www.youtube.com/watch?v=fsimJIE-pME&list=PLQRyeBV1rkk19C0IydNk-OMTRQi18katz&index=25&ab_channel=easyCodeRu
+task/025-navigation soluton on YouTube https://youtu.be/fsimJIE-pME https://youtu.be/mnl5eVI_iuA https://youtu.be/fmnIkZHdbWA
 
-task/025-2 https://www.youtube.com/watch?v=mnl5eVI_iuA&list=PLQRyeBV1rkk19C0IydNk-OMTRQi18katz&index=26&ab_channel=easyCodeRu
