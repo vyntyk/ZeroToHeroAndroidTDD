@@ -11,6 +11,7 @@ interface UiState {
         override fun apply(button: Button, progressBar: ProgressBar, textView: TextView) {
             button.isEnabled = false
             progressBar.visibility = View.VISIBLE
+            textView.visibility = View.GONE
         }
     }
     object ShowData : UiState{
