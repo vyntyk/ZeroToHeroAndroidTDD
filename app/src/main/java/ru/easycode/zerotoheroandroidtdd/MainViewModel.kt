@@ -6,16 +6,17 @@ import kotlinx.coroutines.SupervisorJob
 import kotlinx.coroutines.launch
 
 class MainViewModel(
-    private val liveDataWrapper: LiveDataWrapper,
+    private val liveDataWrapper: LiveDataWrapper.Mutable,
     private val repository: Repository
-) {
+) : LiveDataWrapper.Observe {
     private val viewModelScope = CoroutineScope(SupervisorJob() + Dispatchers.Main.immediate)
-    fun liveData() = liveDataWrapper.liveData()
+    override fun liveData() = liveDataWrapper.liveData()
     fun load() {
         liveDataWrapper.update(UiState.ShowProgress)
         viewModelScope.launch {
             val result = repository.load()
-            liveDataWrapper.update(UiState.ShowData(result.text))
+            //liveDataWrapper.update(UiState.ShowData(result.toString()))
+            result.show(liveDataWrapper)
         }
     }
 
@@ -27,5 +28,4 @@ class MainViewModel(
         val uiState = bundleWrapper.restore()
         liveDataWrapper.update(uiState)
     }
-
 }

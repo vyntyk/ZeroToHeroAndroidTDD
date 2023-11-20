@@ -74,9 +74,7 @@ class MainViewModelTest {
 private interface FakeBundleWrapper : BundleWrapper.Mutable {
 
     class Base : FakeBundleWrapper {
-
         private var uiState: UiState? = null
-
         override fun save(uiState: UiState) {
             this.uiState = uiState
         }
@@ -86,13 +84,9 @@ private interface FakeBundleWrapper : BundleWrapper.Mutable {
 }
 
 private interface FakeRepository : Repository {
-
     fun expectResult(result: LoadResult)
-
     fun checkLoadCalledTimes(times: Int)
-
     class Base : FakeRepository {
-
         private lateinit var result: LoadResult
 
         override fun expectResult(result: LoadResult) {
