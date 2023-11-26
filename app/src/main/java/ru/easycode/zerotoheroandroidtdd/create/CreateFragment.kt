@@ -1,9 +1,12 @@
 package ru.easycode.zerotoheroandroidtdd.create
 
+import android.content.Context
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.inputmethod.InputMethod
+import android.view.inputmethod.InputMethodManager
 import androidx.activity.OnBackPressedCallback
 import androidx.core.widget.addTextChangedListener
 import ru.easycode.zerotoheroandroidtdd.core.AbstractFragment
@@ -26,6 +29,7 @@ class CreateFragment : AbstractFragment<FragmentCreateBinding>() {
             binding.createButton.isEnabled = binding.inputEditText.text.toString().length >= 3
         }
         binding.createButton.setOnClickListener {
+            hideKeyboard()
             viewModel.add(binding.inputEditText.text.toString())
         }
     }
