@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/createFrameLayout">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/inputEditText"
+        android:layout_width="match_parent"
+        android:layout_margin="8dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content">
+
+    </com.google.android.material.textfield.TextInputEditText>
+
+    <Button
+        android:enabled="false"
+        android:layout_gravity="bottom|center"
+        android:id="@+id/createButton"
+        android:text="create"
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </Button>
+</FrameLayout>
