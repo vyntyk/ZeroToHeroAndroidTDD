@@ -3,7 +3,7 @@ package ru.easycode.zerotoheroandroidtdd.list
 import androidx.lifecycle.LiveData
 import org.junit.Assert.assertEquals
 import ru.easycode.zerotoheroandroidtdd.core.BundleWrapper
-import ru.easycode.zerotoheroandroidtdd.core.ListLiveDataWrapper
+import ru.easycode.zerotoheroandroidtdd.list.ListLiveDataWrapper
 
 interface FakeListLiveDataWrapper : ListLiveDataWrapper.All {
 
